@@ -1,0 +1,54 @@
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport"content="width=device-width,initial-scale=1.0"> 
+<title>Stacking</title> 
+<link rel="stylesheet" href="./stacking.css"> 
+<title>Document</title>
+` <style>  div{ 
+    height:100px; 
+    width:100px; 
+    } 
+    .box1{ 
+    background-color:pink; 
+    margin-top:20px; 
+    margin-left:20px; 
+    z-index:10; 
+    opacity:0.75; 
+    } 
+    .box2{ background-color:lightblue; 
+    position:relative; 
+   margin-top:100px; 
+    margin-left:50px; 
+    z-index:5; 
+    opacity:0.7; 
+    } 
+    .box3{ 
+    background-color:lightgreen; 
+    position:relative; 
+    margin-top:-20px; 
+    margin-left:30px; 
+    z-index:2; 
+    opacity:0.8; 
+    } 
+    #b1{ 
+    position:absolute; 
+    } 
+    #b2{ 
+    position:relative; 
+    } 
+    #b3{ 
+    position:relative; 
+    }</style>
+</head>
+
+
+
+</head> 
+
+<body> 
+  <div id="b1"class="box1">Box1</div> 
+  <div id="b2"class="box2">Box2</div> 
+  <div id="b3"class="box3">Box3</div> 
+</body> 
+</html>

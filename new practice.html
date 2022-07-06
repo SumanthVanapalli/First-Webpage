@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300" style="background-color:rgb(210, 83, 83)"></canvas>
+    <script> 
+    var canvas=document.getelementbyid("canvas");
+    var ctx=canvas.getcontext("2d");
+    var radius=canvas.height /2;
+    ctx.translate(radius.radius);
+    radius=radius*0.90;
+    drawclock();
+
+    function drawclock(){
+        ctx.arc(0,2,radius,2,2*Math.PI);
+        ctx.fillstyle='white';
+        ctx.fill();
+        
+    }
+
+    </script>
+</body>
+</html>

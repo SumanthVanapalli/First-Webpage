@@ -1,0 +1,212 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar {
+                overflow: auto;
+                background-color: white;
+
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: black;
+                text-align: center;
+
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            .column {
+                float: right;
+                width: 100%;
+                padding: 10px;
+                background-color: black;
+                height: 100%;
+                color: white;
+            }
+
+            .column a {
+                float: none;
+                color: white;
+                padding: 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .column a:hover {
+                background-color: #ddd;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .dropdown .dropbtn {
+                font-size: 22px;
+                border: none;
+                outline: none;
+                color: black;
+                padding-top: 18px;
+                text-align: center;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover,
+            .dropdown:hover .dropbtn {
+                background-color: white;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color:black;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                cursor: pointer;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <a href="#Logo"><img src="Logo.jpg" width="55px" height="70px"></a>
+            <div class="dropdown">
+                <button class="dropbtn"><b>Tutorials</b>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <div class="row">
+                    <div class="column" style="color: white; background-color:black">
+                        <h3 style="color: gold;">Tutorials</h3>
+                        <h3 style="color: gold;">HTML and CSS</h3>
+                        <a href="#Learn HTML">Learn HTML</a>
+                        <a href="#Learn CSS">Learn CSS</a>
+                        <a href="#Learn RWD">Learn RWD</a>
+                        <a href="#Learn Bootstrap">Learn Bootstrap</a>
+                        <a href="#Learn W3.CSS">Learn W3.CSS</a>
+                        <a href="#Learn Colors">Learn Colors</a>
+                        <a href="#Learn Graphics">Learn Graphics</a>
+                        <a href="#Learn SVG">Learn SVG</a>
+                        <a href="#Learn Canvas">Learn Canvas</a>
+                        <a href="#Learn How To">Learn How To</a>
+                        <a href="#Learn Sass">Learn Sass</a>
+                    </div>
+                    <div class="column" style="color: white; background-color:black;float: left;">
+                        <h3 style="color: gold;">JavaScript</h3>
+                        <a href="#Learn JavaScript">Learn JavaScript</a>
+                        <a href="#Learn jQuery">Learn jQuery</a>
+                        <a href="#Learn React">Learn React</a>
+                        <a href="#Learn AngularJS">Learn AngularJS</a>
+                        <a href="#Learn JSON">Learn JSON</a>
+                        <a href="#Learn AJAX">Learn AJAX</a>
+                        <a href="#Learn AppML">Learn AppML</a>
+                        <a href="#Learn W3.JS">Learn W3.JS</a>
+                    </div> 
+                    <div class="column" style="color: white; background-color:black">
+                        <h3 style="color: gold;">JavaScript</h3>
+                        <a href="#Learn JavaScript">Learn JavaScript</a>
+                        <a href="#Learn jQuery">Learn jQuery</a>
+                        <a href="#Learn React">Learn React</a>
+                        <a href="#Learn AngularJS">Learn AngularJS</a>
+                        <a href="#Learn JSON">Learn JSON</a>
+                        <a href="#Learn AJAX">Learn AJAX</a>
+                        <a href="#Learn AppML">Learn AppML</a>
+                        <a href="#Learn W3.JS">Learn W3.JS</a>
+                    </div>
+                    
+
+                </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><b>References</b>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div>
+                        <a href="#References"
+                            style="color: gold; background-color: black; font-size:20px;"><b>References</b></a>
+                    </div>
+                    <div>
+                        <a href="#HTML" style="color: gold;background-color: black; font-size: large;">HTML</a>
+                    </div>
+                    <div style="color: white; background-color:black">
+                        <a href="#">HTML Tag Reference</a>
+                        <a href="#">HTML Browser Support</a>
+                        <a href="#">HTML Event Reference</a>
+                        <a href="#">HTML Color Reference</a>
+                        <a href="#">HTML Attribute Reference</a>
+                        <a href="#">HTML Canvas Reference</a>
+                        <a href="#">HTML SVG Reference</a>
+                        <a href="#">Google Maps Reference</a>
+                    </div>
+                    <div>
+                        <a href="#CSS" style="color: gold;background-color: black; font-size: large;">CSS</a>
+                    </div>
+                    <div style="color: white; background-color:black">
+                        <a href="#">CSS Reference</a>
+                        <a href="#">CSS Browser Support</a>
+                        <a href="#">CSS Selector Reference</a>
+                        <a href="#">Bootstrap 3 Reference</a>
+                        <a href="#">Bootstrap 4 Reference</a>
+                        <a href="#">W3.CSS Reference</a>
+                        <a href="#">Icon Reference</a>
+                        <a href="#">Sass Reference</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Dropdown Menu inside a Navigation Bar</h3>
+        <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+    </body>
+
+    </html>
